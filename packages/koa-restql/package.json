@@ -1,0 +1,27 @@
+{
+  "name": "@linguofeng/koa-restql",
+  "version": "0.1.0",
+  "description": "RESTful + GraphQL",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "https://github.com/linguofeng/restql",
+  "author": "林国锋 <linguofeng@msn.com>",
+  "license": "MIT",
+  "scripts": {
+    "type-check": "pnpify tsc --noEmit",
+    "type-check:watch": "run type-check -- --watch",
+    "build": "run build:types && run build:js",
+    "build:types": "pnpify tsc --emitDeclarationOnly --declaration",
+    "build:js": "babel --config-file ../../babel.config.js sources --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "dependencies": {
+    "@linguofeng/restql": "workspace:*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@berry/pnpify": "^0.1.0",
+    "@types/babel__core": "7.1.2",
+    "typescript": "^3.6.2"
+  }
+}

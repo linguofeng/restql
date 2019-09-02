@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "version": "0.1.0",
+  "description": "RESTful + GraphQL",
+  "main": "index.js",
+  "repository": "https://github.com/linguofeng/restql",
+  "author": "林国锋 <linguofeng@msn.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/types": "^7.5.5",
+    "@berry/pnpify": "^0.1.0",
+    "@types/eslint": "6.1.1",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.3.0",
+    "typescript": "^3.5.3"
+  }
+}
